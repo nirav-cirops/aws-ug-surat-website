@@ -1,0 +1,103 @@
+/* AWS User Group Surat — Custom Styles */
+
+/* Grid pattern for hero background */
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(255, 153, 0, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 153, 0, 0.15) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Stat cards hover effect */
+.stat-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Event card glow */
+.event-card {
+  transition: box-shadow 0.3s ease;
+}
+.event-card:hover {
+  box-shadow: 0 20px 60px rgba(255, 153, 0, 0.15);
+}
+
+/* Past event cards */
+.past-event-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.past-event-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Topic tags */
+.topic-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 1rem;
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #232F3E;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+.topic-tag:hover {
+  border-color: #FF9900;
+  color: #FF9900;
+  background: #fff9f0;
+}
+.topic-tag-active {
+  background: #FF9900;
+  border-color: #FF9900;
+  color: #232F3E;
+  font-weight: 600;
+}
+
+/* Organizer cards */
+.organizer-card {
+  transition: transform 0.2s ease;
+}
+.organizer-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Social buttons */
+.social-btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.social-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #FF9900;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e68a00;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(255, 153, 0, 0.3);
+  color: #232F3E;
+}
